@@ -1,3 +1,232 @@
-body {
-	font-family: sans-serif;
+@import './colors';
+@import './components';
+@import './mixins';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6rem;
+}
+
+h1.company-name {
+	margin-bottom: 0.5em;
+	font-size: 3rem;
+	font-family: 'Cinzel', serif;
+	// color: rgb(130, 43, 43);
+	color: #fff;
+	z-index: 1;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+/******* HEADER *******/
+
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	padding: 2em;
+	text-align: center;
+	background-image: url('../img/running-road-mini.jpg');
+	background-size: cover;
+	background-position: center;
+
+	overflow: hidden;
+
+	&__logo {
+		position: absolute;
+		top: 2em;
+		left: 1em;
+		transform: translateY(-30%);
+		font-family: 'Cinzel', serif;
+		font-weight: 700;
+		font-size: 2rem;
+		color: #fff;
+		z-index: 500;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 2em;
+		z-index: 1;
+
+		p {
+			color: #fff;
+		}
+	}
+
+	&__shadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+
+	// &__heading {
+	// 	font-size: 5rem;
+	// 	font-weight: 300;
+	// }
+
+	// &__text {
+	// 	font-size: 1.4rem;
+	// }
+}
+
+/******* NAVIGATION *******/
+
+.nav {
+	&-mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #fff;
+		transform: translateX(-102%);
+		transition: transform 0.3s;
+		z-index: 10;
+
+		&--active {
+			transform: translateX(0);
+		}
+	}
+
+	&-desktop {
+		display: none;
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		margin: 0.5em;
+		padding: 0.5em;
+		font-size: 2.3rem;
+		color: rgb(57, 57, 57);
+		text-transform: uppercase;
+		text-decoration: none;
+		transition: color 0.3s;
+
+		&:hover {
+			color: rgb(174, 174, 174);
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			content: '';
+			width: 100%;
+			height: 100%;
+			border: 1px solid rgb(174, 174, 174);
+		}
+
+		&:hover::before {
+			animation: pulse 1s;
+		}
+	}
+}
+
+/* Header */
+
+// Overflow so that the mobile navigation would be hidden.
+
+// .header {
+// 	display: flex;
+// 	flex-direction: column;
+// 	justify-content: center;
+// 	align-items: center;
+// 	height: 100vh;
+// 	position: relative;
+// 	overflow: hidden;
+
+// 	&__text {
+// 		display: flex;
+// 		flex-direction: column;
+// 		justify-content: center;
+// 		align-items: center;
+// 		padding: 2em;
+
+// 		p {
+// 			font-weight: 200;
+// 		}
+// 	}
+
+// 	&__img {
+// 		background-image: url('../img/track-mini.jpg');
+// 		position: relative;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-size: cover;
+// 		background-position: center;
+// 	}
+
+// 	&__shadow {
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-color: rgba(0, 0, 0, 0.4);
+// 	}
+// }
+
+/******* HAMBURGER MENU *******/
+
+.hamburger {
+	position: absolute;
+	top: 3em;
+	right: 1em;
+	transform: translateY(-50%);
+	z-index: 500;
+
+	&-inner,
+	&-inner::before,
+	&-inner::after {
+		background-color: #fff;
+		z-index: 500;
+	}
+}
+
+// .header {
+// 	display: flex;
+// 	height: 100vh;
+// 	position: relative;
+// 	overflow: hidden;
+// }
+
+/* Navigation */
+
+// .nav {
+// 	text-decoration: none;
+// }
+
+/******* BREAKPOINTS *******/
+
+@import './small';
+@import './medium';
+@import './large';
