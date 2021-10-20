@@ -1,13 +1,9 @@
 @media (min-width: 768px) {
-
-
 	h1.company-name {
 		font-size: 5rem;
 	}
 
-    .header {
-
-            
+	.header {
 		&__logo {
 			top: 2em;
 			left: 1em;
@@ -31,13 +27,11 @@
 		}
 	}
 
-    .hamburger {
-        position: absolute;
-        top: 3.4em;
-        right: 1.2em;
-        transform: translateY(-50%);
-        z-index: 500;
-
-    }
-
+	.hamburger {
+		position: absolute;
+		top: 3.4em;
+		right: 1.2em;
+		transform: translateY(-50%);
+		z-index: 500;
+	}
 }

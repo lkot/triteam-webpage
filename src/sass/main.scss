@@ -67,8 +67,11 @@ h1.company-name {
 		color: $pure-white;
 		z-index: 500;
 
-		&-active{
-			color: $bright-red;
+		&--active {
+			span {
+				color: $pure-black;
+			}
+			// color: $bright-red;
 		}
 	}
 
@@ -166,6 +169,7 @@ h1.company-name {
 
 	&-desktop {
 		display: none;
+		// overflow: auto;
 	}
 
 	&__link {

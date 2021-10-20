@@ -15,6 +15,7 @@
 		background-image: $red-main-gradient, url('../img/bike-fast-big.jpg');
 
 		&__logo {
+			position: fixed;
 			top: 2em;
 			left: 1em;
 			transform: translateY(-40%);
@@ -23,7 +24,7 @@
 
 		&__login {
 			display: block;
-			position: absolute;
+			position: fixed;
 			top: 2em;
 			right: 1em;
 			transform: translateY(-40%);
@@ -62,6 +63,7 @@
 		&-desktop {
 			display: block;
 			width: 100%;
+			// background-color: $pure-black;
 			z-index: 500;
 
 			&::before {
@@ -72,7 +74,7 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 				height: 1px;
-				width: 50%;
+				width: 40%;
 				border-bottom: 1px solid $light-grey;
 			}
 		}
