@@ -12,7 +12,7 @@
 	}
 
 	.header {
-		background-image: $red-main-gradient, url('../img/bike-fast-big.jpg');
+		@include heroImages($red-main-gradient, '../img/bike-fast-big.jpg');
 
 		&__logo {
 			position: fixed;

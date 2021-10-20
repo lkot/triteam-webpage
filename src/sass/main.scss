@@ -51,9 +51,7 @@ h1.company-name {
 	height: 100vh;
 	padding: 2em;
 	text-align: center;
-	background-image: $red-main-gradient, url('../img/2-bike-fast-big.jpg');
-	background-size: cover;
-	background-position: center;
+	@include heroImages($red-main-gradient, '../img/2-bike-fast-big.jpg');
 	overflow: hidden;
 
 	&__logo {
