@@ -1,0 +1,43 @@
+@media (min-width: 768px) {
+
+
+	h1.company-name {
+		font-size: 5rem;
+	}
+
+    .header {
+
+            
+		&__logo {
+			top: 2em;
+			left: 1em;
+			transform: translateY(-60%);
+			font-size: 3rem;
+		}
+
+		&__text {
+			p {
+				font-size: 2.5rem;
+			}
+		}
+
+		&__arrow {
+			bottom: 3em;
+			padding: 2em;
+		}
+
+		&__arrow-icon {
+			width: 40px;
+		}
+	}
+
+    .hamburger {
+        position: absolute;
+        top: 3.4em;
+        right: 1.2em;
+        transform: translateY(-50%);
+        z-index: 500;
+
+    }
+
+}
