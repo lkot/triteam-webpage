@@ -29,8 +29,9 @@ h1.company-name {
 	z-index: 1;
 }
 
-.red-addons {
+.red-addon {
 	color: $bright-red;
+	font-weight: 700;
 }
 
 .wrapper {
@@ -156,7 +157,7 @@ h1.company-name {
 		align-items: center;
 		flex-direction: column;
 		background-color: $pure-white;
-		transform: translateX(-102%);
+		transform: translateX(102%);
 		transition: transform 0.3s;
 		z-index: 10;
 
