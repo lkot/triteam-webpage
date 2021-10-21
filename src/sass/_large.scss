@@ -59,7 +59,7 @@
 		position: fixed;
 		top: 0;
 		padding: 1em;
-		
+
 		&-desktop {
 			display: block;
 			width: 100%;
@@ -95,6 +95,55 @@
 
 			&:hover::before {
 				animation: pulse 1s;
+			}
+		}
+	}
+
+	/******* ABOUT US *******/
+
+	.about {
+		&__card {
+			display: flex;
+			margin: 2em 0;
+			width: 100%;
+
+			&__box {
+				display: flex;
+				flex-direction: row;
+			}
+
+			&-img {
+				width: 50%;
+				height: auto;
+
+				&--right {
+					order: 1;
+				}
+			}
+
+			&-info {
+				width: 50%;
+				padding: 2em;
+				background-color: $pure-white;
+				z-index: 10;
+			}
+
+			&-heading {
+				// margin-bottom: 0.5em;
+				margin: 1em auto;
+				font-size: 3.6rem;
+			}
+
+			&-text {
+				margin-bottom: 1.5em;
+				font-size: 1.5rem;
+				font-weight: 300;
+				color: $pure-black;
+				// color: $dark;
+			}
+
+			&-btn {
+				padding: 1em;
 			}
 		}
 	}
