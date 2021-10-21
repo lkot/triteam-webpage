@@ -26,39 +26,17 @@
 
 .section-heading {
 	position: relative;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	font-size: 3rem;
-	font-weight: 400;
+	font-weight: 300;
 	text-transform: uppercase;
 	text-align: center;
 	color: $wine-red;
-	letter-spacing: 2px;
+	letter-spacing: 4px;
 }
 
 .section-padding {
 	padding: 4em 2em;
-}
-
-// BREAKPOINTS
-
-@media (min-width: 768px) {
-	.section-heading {
-		font-size: 3.6rem;
-	}
-
-	.section-padding {
-		padding: 8em 2em;
-	}
-}
-
-@media (min-width: 992px) {
-	.section-heading {
-		font-size: 4.8rem;
-	}
-
-	.section-padding {
-		padding: 10em 2em;
-	}
 }
 
 /******* SVG WAVES (www.shapedivider.app) *******/
@@ -82,33 +60,12 @@
 	position: relative;
 	display: block;
 	width: calc(110% + 1.3px);
-	height: 45px;
+	height: 60px;
 }
 
 .custom-shape-divider-top-small .shape-fill {
 	fill: #660708;
 }
-
-// top wave BIG screen
-// .custom-shape-divider-top-big {
-// 	position: absolute;
-// 	top: -1px;
-// 	left: 0;
-// 	width: 100%;
-// 	overflow: hidden;
-// 	line-height: 0;
-// }
-
-// .custom-shape-divider-top-big svg {
-// 	position: relative;
-// 	display: block;
-// 	width: calc(110% + 1.3px);
-// 	height: 149px;
-// }
-
-// .custom-shape-divider-top-big .shape-fill {
-// 	fill: $wine-red;
-// }
 
 // bottom wave SMALL screen
 .custom-shape-divider-bottom-small {
@@ -124,54 +81,95 @@
 .custom-shape-divider-bottom-small svg {
 	position: relative;
 	display: block;
-	width: calc(110% + 1.3px);
-	height: 45px;
+	width: calc(190% + 1.3px);
+	height: 60px;
 	transform: rotateY(180deg);
 }
 
 .custom-shape-divider-bottom-small .shape-fill {
 	fill: #660708;
 }
-// top wave BIG screen
+
 .custom-shape-divider-top-big {
-	position: absolute;
-	top: -1px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
+	display: none;
 }
 
-.custom-shape-divider-top-big svg {
-	position: relative;
-	display: block;
-	width: calc(110% + 1.3px);
-	height: 149px;
-}
-
-.custom-shape-divider-top-big .shape-fill {
-	fill: $wine-red;
-}
-
-// bottom wave BIG screen
 .custom-shape-divider-bottom-big {
-	position: absolute;
-	bottom: -1px;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
+	display: none;
 }
 
-.custom-shape-divider-bottom-big svg {
-	position: relative;
-	display: block;
-	width: calc(110% + 1.3px);
-	height: 149px;
-	transform: rotateY(180deg);
+/******* COMPONENTS BREAKPOINTS *******/
+
+@media (min-width: 768px) {
+	.section-heading {
+		font-size: 3.6rem;
+	}
+
+	.section-padding {
+		padding: 8em 2em;
+	}
+
+	// top wave BIG screen
+	.custom-shape-divider-top-big {
+		display: block;
+		position: absolute;
+		top: -1px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+	}
+
+	.custom-shape-divider-top-big svg {
+		position: relative;
+		display: block;
+		width: calc(110% + 1.3px);
+		height: 130px;
+	}
+
+	.custom-shape-divider-top-big .shape-fill {
+		fill: $wine-red;
+	}
+
+	// bottom wave BIG screen
+	.custom-shape-divider-bottom-big {
+		display: block;
+		position: absolute;
+		bottom: -1px;
+		left: 0;
+		width: 100%;
+		overflow: hidden;
+		line-height: 0;
+		transform: rotate(180deg);
+	}
+
+	.custom-shape-divider-bottom-big svg {
+		position: relative;
+		display: block;
+		width: calc(170% + 1.3px);
+		height: 120px;
+		transform: rotateY(180deg);
+	}
+
+	.custom-shape-divider-bottom-big .shape-fill {
+		fill: $wine-red;
+	}
 }
 
-.custom-shape-divider-bottom-big .shape-fill {
-	fill: $wine-red;
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+
+	.section-padding {
+		padding: 10em 2em;
+	}
+
+	// .custom-shape-divider-top-big {
+	// 	display: block;
+	// }
+
+	// .custom-shape-divider-bottom-big {
+	// 	display: block;
+	// }
 }

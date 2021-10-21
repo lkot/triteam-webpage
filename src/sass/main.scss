@@ -252,7 +252,6 @@ h1.company-name {
 /******* ABOUT US *******/
 
 .about {
-
 	position: relative;
 	overflow: hidden;
 	background-color: $pure-white;
@@ -305,8 +304,8 @@ h1.company-name {
 			margin-top: 1em;
 			padding: 0.8em;
 			width: 100%;
-			color: $wine-red;
-			background-color: transparent;
+			color: $pure-white;
+			background-color: $wine-red;
 			border: 2px solid $wine-red;
 			border-radius: 6px;
 			cursor: pointer;
@@ -315,8 +314,8 @@ h1.company-name {
 			transition: background-color 0.3s;
 
 			&:hover {
-				color: $pure-white;
-				background-color: $wine-red;
+				color: $wine-red;
+				background-color: $light-grey;
 			}
 		}
 	}
