@@ -233,6 +233,77 @@ h1.company-name {
 // 	}
 // }
 
+/******* ABOUT US *******/
+
+.about {
+	position: relative;
+	overflow: hidden;
+	background-color: $pure-white;
+
+	&__card {
+		margin: 1em 0;
+		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
+		background-color: $pure-white;
+		overflow: hidden;
+
+		&--left {
+			direction: ltr;
+		}
+
+		&--right {
+			direction: rtl;
+		}
+
+		&-img {
+			width: 100%;
+			transition: transform 0.3s;
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		&-info {
+			padding: 2em;
+			background-color: $pure-white;
+			z-index: 10;
+		}
+
+		&-heading {
+			margin-bottom: 1em;
+			font-size: 2.4rem;
+			font-weight: 400;
+			color: $wine-red;
+		}
+
+		&-text {
+			margin-bottom: 1em;
+			font-size: 1.3rem;
+			color: $pure-black;
+			// color: $dark;
+		}
+
+		&-btn {
+			margin-top: 1em;
+			padding: 0.8em;
+			width: 100%;
+			color: $wine-red;
+			background-color: transparent;
+			border: 2px solid $wine-red;
+			border-radius: 6px;
+			cursor: pointer;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			transition: background-color 0.3s;
+
+			&:hover {
+				color: $pure-white;
+				background-color: $wine-red;
+			}
+		}
+	}
+}
+
 /******* HAMBURGER MENU *******/
 
 .hamburger {
@@ -249,19 +320,6 @@ h1.company-name {
 		z-index: 500;
 	}
 }
-
-// .header {
-// 	display: flex;
-// 	height: 100vh;
-// 	position: relative;
-// 	overflow: hidden;
-// }
-
-/* Navigation */
-
-// .nav {
-// 	text-decoration: none;
-// }
 
 /******* BREAKPOINTS *******/
 
