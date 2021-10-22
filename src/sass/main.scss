@@ -324,6 +324,168 @@ h1.company-name {
 	}
 }
 
+/******* OFFER *******/
+
+.offer {
+	position: relative;
+	overflow: hidden;
+	background-color: $pure-white;
+
+	&__cards {
+		&-contact-btn {
+			position: relative;
+			margin-top: 1em;
+			padding: 0.8em;
+			width: 30%;
+			color: $bright-red;
+			background-color: transparent;
+			border: 2px solid $bright-red;
+			border-radius: 6px;
+			cursor: pointer;
+			font-family: 'Raleway', sans-serif;
+			font-weight: 700;
+			transition: background-color 0.3s;
+
+			// Pulse animation below.
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: '';
+				width: 100%;
+				height: 100%;
+				border: 1px solid $bright-red;
+				opacity: 0;
+			}
+
+			&:hover::before {
+				animation: pulse 1s;
+			}
+
+			// &:hover {
+			// 	color: $wine-red;
+			// 	background-color: $pure-white;
+			// }
+		}
+	}
+
+	&__card {
+		position: relative;
+		margin: 1em 0em;
+		height: 450px;
+		color: $pure-white;
+		text-align: center;
+		perspective: 1000px;
+
+		&:hover {
+			.offer__card-img {
+				transform: rotateX(-180deg);
+				opacity: 0;
+			}
+
+			.offer__card-info {
+				transform: rotateX(0);
+				opacity: 1;
+			}
+		}
+
+		&-img {
+			padding: 2em;
+			height: 100%;
+			border-radius: 8px;
+			background-size: cover;
+			transition: transform 1s, opacity 1s;
+
+			&--first {
+				background-image: $red-main-gradient,
+					url('../img/high-angle-male-swimmer-water-pool-BIG.jpg');
+			}
+
+			&--second {
+				background-image: $red-main-gradient,
+					url('../img/high-angle-male-swimmer-water-pool-BIG.jpg');
+			}
+
+			&--third {
+				background-image: $red-main-gradient,
+					url('../img/high-angle-male-swimmer-water-pool-BIG.jpg');
+			}
+
+			&-title {
+				font-size: 2.8rem;
+			}
+
+			&-info {
+				position: absolute;
+				bottom: 30px;
+				right: 30px;
+				font-size: 1.8rem;
+
+				i {
+					margin-right: 0.3em;
+				}
+			}
+		}
+
+		&-info {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			background-image: $red-main-gradient;
+			border-radius: 8px;
+			opacity: 0;
+			transform: rotateX(180deg);
+			transition: transform 1s, opacity 1s;
+
+			&-title {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				top: 1.2em;
+				font-size: 2.8rem;
+			}
+
+			&-list {
+				margin: 0 auto;
+				width: 70%;
+				list-style: none;
+
+				&-item {
+					padding: 1em;
+					font-size: 1.4rem;
+					border-bottom: 1px solid $pure-white;
+
+					&:last-child {
+						border-bottom: none;
+					}
+				}
+			}
+
+			&-btn {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				bottom: 2em;
+				padding: 1em;
+				border-radius: 8px;
+				width: 80%;
+				border: none;
+				background-color: $light-grey;
+				cursor: pointer;
+
+				&::before {
+					background-color: $red-main-gradient;
+				}
+			}
+		}
+	}
+}
+
 /******* HAMBURGER MENU *******/
 
 .hamburger {

@@ -1,0 +1,17 @@
+@media (min-width: 576px) {
+	.offer {
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+        &__card {
+            margin: 1em 1em;
+        }
+		// src/sass/main.scss &__card {
+		// 	margin: 1em;
+		// 	width: 45%;
+		// }
+	}
+}
