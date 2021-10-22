@@ -42,6 +42,7 @@ h1.company-name {
 	padding: 2em;
 	text-align: center;
 	@include heroImages($red-main-gradient, '../img/2-bike-fast-big.jpg');
+	filter: brightness(110%);
 	overflow: hidden;
 
 	&__logo {
@@ -59,7 +60,6 @@ h1.company-name {
 			span {
 				color: $pure-black;
 			}
-			// color: $bright-red;
 		}
 	}
 
@@ -264,7 +264,9 @@ h1.company-name {
 	&__card {
 		margin: 1em 0;
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
-		background-color: $pure-white;
+		// background-color: $pure-white;
+		background-image: $red-main-gradient;
+		// background-color: $red-main-gradient;
 		overflow: hidden;
 
 		&--right {
@@ -282,7 +284,7 @@ h1.company-name {
 
 		&-info {
 			padding: 2em;
-			background-color: $pure-white;
+			// background-color: $pure-white;
 			z-index: 10;
 		}
 
@@ -301,6 +303,7 @@ h1.company-name {
 		}
 
 		&-btn {
+			position: relative;
 			margin-top: 1em;
 			padding: 0.8em;
 			width: 100%;
@@ -315,7 +318,7 @@ h1.company-name {
 
 			&:hover {
 				color: $wine-red;
-				background-color: $light-grey;
+				background-color: $pure-white;
 			}
 		}
 	}

@@ -1,16 +1,15 @@
 // Colors palette from coolors.co website
 
-$pure-white: #FFFFFF;
-$light-white: #F5F3F4;
-$light-grey: #D3D3D3;
-$dark-grey: #B1A7A6;
-$light-red: #E5383B;
-$bright-red: #BA181B;
-$dark-red: #A4161A;
+$pure-white: #ffffff;
+$light-white: #f5f3f4;
+$light-grey: #d3d3d3;
+$dark-grey: #b1a7a6;
+$light-red: #e5383b;
+$bright-red: #ba181b;
+$dark-red: #a4161a;
 $wine-red: #660708;
-$light-black: #161A1D;
-$pure-black: #0B090A;
-
+$light-black: #161a1d;
+$pure-black: #0b090a;
 
 $red-main-gradient: linear-gradient(
     45deg,
@@ -18,6 +17,19 @@ $red-main-gradient: linear-gradient(
     rgba(245, 243, 244, 0.3)
 );
 
+// $red-main-gradient: linear-gradient(
+//     45deg,
+//     rgba(164, 22, 26, 0.4),
+//     rgba(255, 148, 121, 0.6)
+// );
+
+$red-main-gradient: linear-gradient(
+	326deg,
+	rgba(189, 79, 108, 0.6),
+	rgba(215, 129, 106, 0.3)
+);
+
+// $red-gradient: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
 
 // $light-blue-gradient: linear-gradient(
 // 	45deg,
