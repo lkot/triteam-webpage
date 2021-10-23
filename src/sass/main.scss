@@ -336,7 +336,7 @@ h1.company-name {
 			position: relative;
 			margin-top: 1em;
 			padding: 0.8em;
-			width: 30%;
+			width: 100%;
 			color: $bright-red;
 			background-color: transparent;
 			border: 2px solid $bright-red;
@@ -398,17 +398,17 @@ h1.company-name {
 
 			&--first {
 				background-image: $red-main-gradient,
-					url('../img/high-angle-male-swimmer-water-pool-BIG.jpg');
+					url('../img/young-girl-enjoying-swimming-pool-BIG.jpg');
 			}
 
 			&--second {
 				background-image: $red-main-gradient,
-					url('../img/high-angle-male-swimmer-water-pool-BIG.jpg');
+					url('../img/hands-together-sport-team-BIG.jpg');
 			}
 
 			&--third {
 				background-image: $red-main-gradient,
-					url('../img/high-angle-male-swimmer-water-pool-BIG.jpg');
+					url('../img/jump-girl-workout-BIG.jpg');
 			}
 
 			&-title {
@@ -418,7 +418,7 @@ h1.company-name {
 			&-info {
 				position: absolute;
 				bottom: 30px;
-				right: 30px;
+				left: 30px;
 				font-size: 1.8rem;
 
 				i {
@@ -436,7 +436,7 @@ h1.company-name {
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
-			background-image: $red-main-gradient;
+			background-image: $red-secondary-gradient;
 			border-radius: 8px;
 			opacity: 0;
 			transform: rotateX(180deg);
@@ -455,35 +455,106 @@ h1.company-name {
 				width: 70%;
 				list-style: none;
 
-				&-item {
+				&-item,
+				&-price {
 					padding: 1em;
 					font-size: 1.4rem;
 					border-bottom: 1px solid $pure-white;
+					text-transform: uppercase;
 
 					&:last-child {
 						border-bottom: none;
 					}
 				}
+
+				&-price {
+					font-size: 2rem;
+					color: $pure-white;
+					font-weight: 700;
+					text-transform: none;
+				}
 			}
+
+			// &-btn {
+			// 	position: relative;
+			// 	margin-top: 1em;
+			// 	padding: 0.8em;
+			// 	width: 100%;
+			// 	color: $pure-white;
+			// 	background-color: $wine-red;
+			// 	border: 2px solid $wine-red;
+			// 	border-radius: 6px;
+			// 	cursor: pointer;
+			// 	font-family: 'Raleway', sans-serif;
+			// 	font-weight: 700;
+			// 	transition: background-color 0.3s;
+
+			// 	&:hover {
+			// 		color: $wine-red;
+			// 		background-color: $pure-white;
+			// 	}
+			// }
 
 			&-btn {
 				position: absolute;
 				left: 50%;
 				transform: translateX(-50%);
 				bottom: 2em;
-				padding: 1em;
+				padding: 0.8em;
 				border-radius: 8px;
-				width: 80%;
+				width: 70%;
 				border: none;
-				background-color: $light-grey;
+				color: $pure-white;
+				background-color: $wine-red;
+				font-weight: 700;
+				transition: background-color 0.3s;
+				border: 2px solid $wine-red;
+				border-radius: 6px;
 				cursor: pointer;
+				font-family: 'Raleway', sans-serif;
 
-				&::before {
-					background-color: $red-main-gradient;
+				&:hover {
+					color: $wine-red;
+					background-color: $pure-white;
 				}
 			}
 		}
 	}
+}
+
+/******* TEAM SECTION *******/
+
+.team {
+	position: relative;
+	overflow: hidden;
+	background-color: $pure-white;
+}
+
+/******* PARALAX IMAGE *******/
+
+.paralax-img {
+	padding: 6em 2em;
+	text-align: center;
+	color: $pure-white;
+
+	&__title {
+		margin-bottom: 0.5em;
+		font-size: 6rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		cursor: default;
+	}
+
+	&__text {
+		padding: 1em 0;
+	}
+}
+
+.paralax-first {
+	@include paralaxImages('../img/4-swim-beach-big.jpg');
+}
+.paralax-second {
+	@include paralaxImages('../img/tri-bike-side-BIG.jpg');
 }
 
 /******* HAMBURGER MENU *******/

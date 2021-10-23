@@ -11,11 +11,11 @@ $wine-red: #660708;
 $light-black: #161a1d;
 $pure-black: #0b090a;
 
-$red-main-gradient: linear-gradient(
-    45deg,
-    rgba(164, 22, 26, 0.4),
-    rgba(245, 243, 244, 0.3)
-);
+// $red-main-gradient: linear-gradient(
+//     45deg,
+//     rgba(164, 22, 26, 0.4),
+//     rgba(245, 243, 244, 0.3)
+// );
 
 // $red-main-gradient: linear-gradient(
 //     45deg,
@@ -27,6 +27,12 @@ $red-main-gradient: linear-gradient(
 	326deg,
 	rgba(189, 79, 108, 0.6),
 	rgba(215, 129, 106, 0.3)
+);
+
+$red-secondary-gradient: linear-gradient(
+	326deg,
+	rgba(214, 38, 38, 0.768),
+	rgba(241, 109, 73, 0.489)
 );
 
 // $red-gradient: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);

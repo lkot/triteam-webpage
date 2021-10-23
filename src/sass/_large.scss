@@ -66,6 +66,7 @@
 			}
 		}
 	}
+
 }
 
 @media (min-width: 1200px) {
@@ -147,7 +148,7 @@
 		&-desktop {
 			display: block;
 			width: 100%;
-			background-color: $pure-black;
+			// background-color: $pure-black;
 			z-index: 500;
 
 			&::before {

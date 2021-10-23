@@ -5,6 +5,18 @@
 	// background-attachment: fixed;
 }
 
+@mixin paralaxImages($bgImg) {
+	position: relative;
+	overflow: hidden;
+	height: 60vh;
+	width: 100%;
+	background-image: url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+
 // @mixin gradientOverlay($bgGrad) {
 // 	position: relative;
 
