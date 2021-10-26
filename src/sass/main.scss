@@ -337,9 +337,9 @@ h1.company-name {
 			margin-top: 1em;
 			padding: 0.8em;
 			width: 100%;
-			color: $bright-red;
-			background-color: transparent;
-			border: 2px solid $bright-red;
+			color: $light-white;
+			background-color: $wine-red;
+			border: 2px solid $wine-red;
 			border-radius: 6px;
 			cursor: pointer;
 			font-family: 'Raleway', sans-serif;
@@ -359,13 +359,15 @@ h1.company-name {
 			}
 
 			&:hover::before {
+				color: $wine-red;
+				background-color: transparent;
 				animation: pulse 1s;
 			}
 
-			// &:hover {
-			// 	color: $wine-red;
-			// 	background-color: $pure-white;
-			// }
+			&:hover {
+				color: $wine-red;
+				background-color: transparent;
+			}
 		}
 	}
 
@@ -598,6 +600,35 @@ h1.company-name {
 	position: relative;
 	overflow: hidden;
 	background-color: $pure-white;
+
+	&-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		// flex-direction: column;
+		// padding: 20px 0;
+	}
+
+	.achievement {
+		&-number {
+			font-size: 2rem;
+			margin-bottom: 1em;
+		}
+
+		&-text {
+			font-size: 1.5rem;
+			text-transform: uppercase;
+		}
+
+		i {
+			padding: 1em;
+			font-size: 3rem;
+			color: $pure-white;
+			text-shadow: 0 0 5px $wine-red;
+		}
+	}
 }
 
 /******* PARALAX IMAGE *******/

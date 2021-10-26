@@ -26,13 +26,28 @@
 
 .section-heading {
 	position: relative;
-	margin-bottom: 1em;
 	font-size: 3rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	text-align: center;
 	color: $wine-red;
 	letter-spacing: 4px;
+	margin: 0 auto 2em;
+	width: fit-content;
+
+	&::before {
+		position: absolute;
+		bottom: -0.1em;
+		left: 0;
+		width: 50px;
+		height: 3px;
+		background-color: $wine-red;
+		content: '';
+	}
+
+	span {
+		font-weight: 900;
+	}
 }
 
 .section-padding {
