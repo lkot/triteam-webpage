@@ -34,8 +34,6 @@ const handleNav = () => {
 	});
 };
 
-navBtn.addEventListener('click', handleNav);
-
 // Achievements counter function.
 const options = {
 	rootMargin: '-250px',
@@ -65,5 +63,6 @@ const startCounter = (entry) => {
 	}
 };
 
+navBtn.addEventListener('click', handleNav);
 const observer = new IntersectionObserver(startCounter, options);
 observer.observe(achievementList);
