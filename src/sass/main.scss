@@ -530,28 +530,22 @@ h1.company-name {
 	background-color: $pure-white;
 
 	&__cards {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		// display: flex;
+		// flex-direction: column;
+		// justify-content: center;
+		// align-items: center;
 	}
 
 	&__card {
-		margin-bottom: 1em;
 		width: 90%;
 		height: 50%;
-		border: 1px solid black;
+		margin: .5em .5em;
+		border: 1px solid $wine-red;
 		transition: transform 0.3s;
 
 		&:hover {
 			transform: scale(0.96);
 		}
-
-		// position: relative;
-		// margin: 1em 0em;
-		// height: 450px;
-		// color: $pure-white;
-		// text-align: center;
 
 		&-top {
 			&-img {
@@ -561,11 +555,6 @@ h1.company-name {
 			}
 		}
 
-		// &-top-img {
-		// 	width: 100%;
-		// 	height: 50%;
-		// }
-
 		&-body {
 			text-align: center;
 			border-bottom: 1px solid $light-grey;
@@ -574,10 +563,12 @@ h1.company-name {
 			&-title,
 			&-text {
 				margin: 0.8em 0;
+				color: $wine-red;
 			}
 
 			&-title {
 				font-size: 2rem;
+				text-transform: uppercase;
 			}
 		}
 
