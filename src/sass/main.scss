@@ -539,7 +539,7 @@ h1.company-name {
 	&__card {
 		width: 90%;
 		height: 50%;
-		margin: .5em .5em;
+		margin: 0.5em 0.5em;
 		border: 1px solid $wine-red;
 		transition: transform 0.3s;
 
@@ -592,6 +592,14 @@ h1.company-name {
 	}
 }
 
+/******* ACHIEVEMENTS *******/
+
+.achievements {
+	position: relative;
+	overflow: hidden;
+	background-color: $pure-white;
+}
+
 /******* PARALAX IMAGE *******/
 
 .paralax-img {
@@ -617,6 +625,9 @@ h1.company-name {
 }
 .paralax-second {
 	@include paralaxImages('../img/tri-bike-side-BIG.jpg');
+}
+.paralax-third {
+	@include paralaxImages('../img/track-purple-athlete-running-BIG.jpg');
 }
 
 /******* HAMBURGER MENU *******/
