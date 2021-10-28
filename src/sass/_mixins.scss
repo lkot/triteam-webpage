@@ -14,7 +14,31 @@
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
-	
+}
+
+// Pulse animation on button hover
+@mixin pulseAnimationHover {
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		width: 100%;
+		height: 100%;
+		border: 1px solid $bright-red;
+		opacity: 0;
+	}
+
+	&:hover::before {
+		color: $wine-red;
+		background-color: transparent;
+		animation: pulse 1s;
+	}
+
+	&:hover {
+		color: $wine-red;
+		background-color: transparent;
+	}
 }
 
 // @mixin gradientOverlay($bgGrad) {
