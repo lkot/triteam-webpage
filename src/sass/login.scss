@@ -1,3 +1,6 @@
+@import './colors';
+@import './animations';
+
 * {
 	padding: 0;
 	margin: 0;
@@ -9,29 +12,7 @@ body {
 	overflow: hidden;
 	// clip-path: circle(60% at 50% 50%);
 	// transition: clip-path 3.8s;
-}
-
-// .login-uveiled {
-//     clip-path: circle(0% at 50% 90%);
-// }
-
-// .login-reveiled {
-//     clip-path: circle(100% at 50% 90%);
-// }
-
-.login-reveal {
-    background: rgb(9, 201, 153);
-    padding: 1em;
-    border-radius: 10px;
-    width: 250px;
-    clip-path: circle(10% at 90% 20%);
-    transition: all .5s ease-in-out;
-    cursor: pointer;
-
-    &:hover {
-        clip-path: circle(75%);
-        background: #00B6FF;
-    }
+	animation: circleReveal 2s linear forwards;
 }
 
 .wave {
@@ -58,6 +39,7 @@ body {
 }
 
 .login-content {
+	position: relative;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -70,6 +52,19 @@ body {
 
 form {
 	width: 360px;
+}
+
+.home-page-btn i {
+	position: absolute;
+	font-size: 2rem;
+	top: 1em;
+	right: 0.5em;
+	color: #660708;
+	transition: 0.3s color;
+}
+
+.home-page-btn i:hover {
+	color: #e5383b;
 }
 
 .login-content img {
