@@ -6,6 +6,9 @@ const allNavLinks = document.querySelectorAll('.nav__link');
 const achievementList = document.querySelector('.achievements-list');
 const achievementNumber = document.querySelectorAll('.achievement-number');
 
+const scrollTopBtn = document.querySelector('.goto-btns--left');
+const footerYear = document.querySelector('.footer__year');
+
 // Mobile menu toggle function.
 const handleNav = () => {
 	// Class 'is-acive' is a hamburger's built-in class
@@ -63,6 +66,22 @@ const startCounter = (entry) => {
 	}
 };
 
+// Scroll to the top function.
+const scrollToTop = () => {
+	window.scroll({
+		top: 0,
+		behavior: 'smooth',
+	});
+};
+
+// Function updating year in the footer section.
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear();
+	footerYear.innerText = year;
+};
+
 navBtn.addEventListener('click', handleNav);
 const observer = new IntersectionObserver(startCounter, options);
 observer.observe(achievementList);
+scrollTopBtn.addEventListener('click', scrollToTop);
+handleCurrentYear();
