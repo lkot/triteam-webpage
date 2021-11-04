@@ -78,7 +78,7 @@
             </div>
         </a>
 
-        <div class="header__text" data-aos="zoom-in" data-aos-delay="400">
+        <div class="header__text" data-aos="zoom-in-down" data-aos-delay="100">
             <h1 class="company-name">
                 <span class='red-addon'>
                     <i class="fas fa-dragon"></i>
@@ -253,7 +253,7 @@
     </svg>
 </div>
 
-            <p class="paralax-img__title">First phase - swim <i class="fas fa-swimmer"></i></p>
+            <p class="paralax-img__title" data-aos="flip-up">First phase - swim <i class="fas fa-swimmer"></i></p>
 
             <div class="custom-shape-divider-bottom-small">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -318,7 +318,7 @@
             <div class="wrapper">
 
                 <div class="offer__cards">
-                    <div class="offer__card" onclick="void(0)">
+                    <div class="offer__card" onclick="void(0)" data-aos="zoom-in" data-aos-delay="100">
                         <div class="offer__card-img offer__card-img--first">
                             <h3 class="offer__card-img-title">Personal Training</h3>
                             <p class="offer__card-img-info">
@@ -340,7 +340,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="offer__card" onclick="void(0)">
+                    <div class="offer__card" onclick="void(0)" data-aos="zoom-out" data-aos-delay="100">
                         <div class="offer__card-img offer__card-img--second">
                             <h3 class="offer__card-img-title">Team Workout</h3>
                             <p class="offer__card-img-info">
@@ -362,7 +362,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="offer__card" onclick="void(0)">
+                    <div class="offer__card" onclick="void(0)" data-aos="zoom-in" data-aos-delay="100">
                         <div class="offer__card-img offer__card-img--third">
                             <h3 class="offer__card-img-title">Extra Classes</h3>
                             <p class="offer__card-img-info">
@@ -449,7 +449,8 @@
     </svg>
 </div>
 
-            <p class="paralax-img__title">Second phase - bike <i class="fas fa-bicycle"></i></p>
+            <p class="paralax-img__title" data-aos="flip-down" data-aos-delay="100">Second phase - bike <i
+                    class="fas fa-bicycle"></i></p>
 
             <div class="custom-shape-divider-bottom-small">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -691,7 +692,8 @@
     </svg>
 </div>
 
-            <p class="paralax-img__title">Third phase - run <i class="fas fa-running"></i></p>
+            <p class="paralax-img__title" data-aos="flip-up" data-aos-delay="100">Third phase - run <i
+                    class="fas fa-running"></i></p>
 
             <div class="custom-shape-divider-bottom-small">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -754,7 +756,8 @@
 
             <div class="wrapper">
 
-                <div class="achievements-list">
+                <div class="achievements-list" data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                    data-aos-delay="100">
 
                     <div class="achievement">
                         <i class="fas fa-grin-beam"></i>
@@ -848,7 +851,8 @@
     </svg>
 </div>
 
-            <p class="paralax-img__title">FINISH - GET YOUR MEDAL <i class="fas fa-medal"></i></p>
+            <p class="paralax-img__title" data-aos="flip-down" data-aos-delay="100">FINISH - GET YOUR MEDAL <i
+                    class="fas fa-medal"></i></p>
 
             <div class="custom-shape-divider-bottom-small">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -930,13 +934,13 @@
 
     <div class="container">
         <img src="../src/img/undraw_manage_chats.svg" class="mail-img mail-img--first"
-            alt="Man standing by the big envelope - ilustration." />
+            alt="Man standing by the big envelope - ilustration." data-aos="zoom-in-down" data-aos-delay="100"/>
         <img src="../src/img/undraw_delivery.svg" class="mail-img mail-img--second"
-            alt="Woman standing with the envelope - ilustration." />
+            alt="Woman standing with the envelope - ilustration." data-aos="zoom-in-down" data-aos-delay="100"/>
         <img src="../src/img/undraw_happy_news.svg" class="mail-img mail-img--third"
-            alt="Man standing by the big envelope - ilustration." />
+            alt="Man standing by the big envelope - ilustration." data-aos="zoom-in-down" data-aos-delay="100"/>
         <img src="../src/img/undraw_mention.svg" class="mail-img mail-img--fourth"
-            alt="Woman standing with the envelope - ilustration." />
+            alt="Woman standing with the envelope - ilustration." data-aos="zoom-in-down" data-aos-delay="100"/>
         <div class="form">
             <div class="contact-info">
                 <h3 class="title">Let's get in touch</h3>
@@ -1062,6 +1066,7 @@
         AOS.init({
             startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
             offset: 200, // offset (in px) from the original trigger point
+            duration: 1000,
             once: true, // whether animation should happen only once - while scrolling down
         });
     </script>
