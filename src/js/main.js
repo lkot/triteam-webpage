@@ -39,7 +39,7 @@ const handleNav = () => {
 
 // Achievements counter function.
 const options = {
-	rootMargin: '-250px',
+	rootMargin: '-150px',
 };
 
 const startCounter = (entry) => {
