@@ -6,7 +6,6 @@
 			display: flex;
 			margin: 2em 0;
 			width: 100%;
-			// background-image: $red-main-gradient;
 
 			&__box {
 				display: flex;
@@ -46,23 +45,6 @@
 
 			&-btn {
 				padding: 1em;
-
-				// Pulse animation below.
-
-				// &::before {
-				// 	position: absolute;
-				// 	top: 0;
-				// 	left: 0;
-				// 	content: '';
-				// 	width: 100%;
-				// 	height: 100%;
-				// 	border: 1px solid $wine-red;
-				// 	opacity: 0;
-				// }
-
-				// &:hover::before {
-				// 	animation: pulse .3s;
-				// }
 			}
 		}
 	}
@@ -70,13 +52,6 @@
 }
 
 @media (min-width: 1200px) {
-	// .section-title {
-	// 	font-size: 4.8rem;
-
-	// 	&::before {
-	// 		height: 4px;
-	// 	}
-	// }
 
 	h1.company-name {
 		font-size: 6rem;
@@ -91,16 +66,6 @@
 			left: 1em;
 			transform: translateY(-40%);
 			font-size: 2.5rem;
-
-			&--active {
-				span {
-					// color: $bright-red;
-				}
-			}
-
-			// &--inner {
-			// 	color: $pure-white;
-			// }
 		}
 
 		&__login {
@@ -148,7 +113,6 @@
 		&-desktop {
 			display: block;
 			width: 100%;
-			// background-color: $pure-black;
 			z-index: 500;
 
 			&::before {
@@ -189,53 +153,6 @@
 			width: 30%;
 		}
 	}
-
-	/******* ABOUT US *******/
-
-	// .about {
-	// 	&__card {
-	// 		display: flex;
-	// 		margin: 2em 0;
-	// 		width: 100%;
-
-	// 		&__box {
-	// 			display: flex;
-	// 			flex-direction: row;
-	// 		}
-
-	// 		&-img {
-	// 			width: 50%;
-	// 			height: auto;
-
-	// 			&--right {
-	// 				order: 1;
-	// 			}
-	// 		}
-
-	// 		&-info {
-	// 			width: 50%;
-	// 			padding: 2em;
-	// 			background-color: $pure-white;
-	// 			z-index: 10;
-	// 		}
-
-	// 		&-heading {
-	// 			margin: 1em auto;
-	// 			font-size: 3.6rem;
-	// 		}
-
-	// 		&-text {
-	// 			margin-bottom: 1.5em;
-	// 			font-size: 1.5rem;
-	// 			font-weight: 300;
-	// 			color: $pure-black;
-	// 		}
-
-	// 		&-btn {
-	// 			padding: 1em;
-	// 		}
-	// 	}
-	// }
 
 	.hamburger {
 		display: none;

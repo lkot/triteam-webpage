@@ -12,8 +12,6 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	overflow: hidden;
-	// clip-path: circle(60% at 50% 50%);
-	// transition: clip-path 3.8s;
 	animation: circleReveal 2s linear forwards;
 }
 
@@ -76,7 +74,6 @@ form {
 .login-content h2 {
 	margin: 15px 0;
 	color: $light-black;
-	// text-transform: uppercase;
 	font-size: 2.9rem;
 }
 
@@ -186,7 +183,6 @@ a:hover {
 
 .btn {
 	position: relative;
-	// display: block;
 	height: 50px;
 	width: 100%;
     margin: 1rem 0;
@@ -198,7 +194,6 @@ a:hover {
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
 	transition: background-color 0.3s;
-	// @include pulseAnimationHover;
 }
 
 .btn:hover {
@@ -206,34 +201,7 @@ a:hover {
 	background-color: $pure-white;
 }
 
-
-
-// .btn::before {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     content: '';
-//     width: 100%;
-//     height: 100%;
-//     border: 1px solid $bright-red;
-//     opacity: 0;
-// }
-
-// .btn:hover::before {
-//     color: $wine-red;
-//     background-color: transparent;
-//     animation: pulse 1s;
-// }
-
-// .btn:hover {
-//     color: $wine-red;
-//     background-color: transparent;
-// }
-
-
-
-
-
+// LOGIN SUBPAGE BREAKPOINTS
 @media screen and (max-width: 1050px) {
 	.container {
 		grid-gap: 5rem;

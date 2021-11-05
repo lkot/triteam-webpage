@@ -1,3 +1,4 @@
+// Script responsible for proper slick carousel functioning.
 $('.team-carousel').slick({
 	autoplay: true,
 	mobileFirst: true,

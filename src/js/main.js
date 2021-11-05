@@ -16,18 +16,10 @@ const handleNav = () => {
 	navBtn.classList.toggle('is-active');
 	navMobile.classList.toggle('nav-mobile--active');
 	mobileLogo.classList.toggle('header__logo--active');
-	// document.body.style.position = 'fixed';
 	document.body.style.overflow = 'hidden';
-
-	// navBtn.addEventListener('click', () => {
-	// 	document.body.style.overflow = '';
-	// 	document.body.style.position = '';
-	// });
 
 	allNavLinks.forEach((item) => {
 		item.addEventListener('click', () => {
-			// document.body.style.overflow = '';
-			// document.body.style.position = '';
 			document.body.style.overflow = 'scroll';
 
 			navBtn.classList.remove('is-active');
